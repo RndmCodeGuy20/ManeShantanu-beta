@@ -1,129 +1,146 @@
-.container {
-  padding: 0 2rem;
+
+.navbar {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.navname {
+    width: 50%;
+    font-size: 4rem;
+    /*padding-left: 10%;*/
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
+.name {
+    background: black;
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+    padding: 20px 40px;
+    width: max-content;
+    margin-left: 12.5%;
+
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+.navcontents {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+.navcontents > div {
+    font-size: 40px;
+    transition: ease-in-out 0.2s;
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+.navcontents > div:hover {
+    /*filter: drop-shadow(0px 4px 0px #000000);*/
+    border-bottom: 4px solid black;
+    font-size: 39px;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
 }
 
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
+.main_body {
+    padding-bottom: 200px;
 }
 
-.title,
-.description {
-  text-align: center;
+.body_text {
+    display: flex;
+    justify-content: center;
+    /*text-align: center;*/
+    font-size: 84px;
+    padding: 55px 0;
 }
 
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
+.line_1 {
+    margin-left: 20%;
 }
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+.line_2 {
+    margin-right: 20%;
+    text-align: right;
 }
 
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
+.projects_btn {
+    font-size: 64px;
 }
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+.projects_btn_name {
+    color: #000;
+    background: #FF7622;
+    width: max-content;
+    margin-left: 17.5%;
+    position: absolute;
+    padding: 0 60px;
+    border: 4px solid black;
+    transform: rotate(-2deg);
+    /*filter: drop-shadow(6px 10px 0px #000000);*/
+    transition: ease-in-out 0.2s;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.projects_btn_name:hover {
+    /*filter: drop-shadow(8px 14px 0px #000000);*/
+    box-shadow: #000000 5px 5px;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
 }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
+.secondary_body {
+    display: flex;
+    height: 420px;
     width: 100%;
-    flex-direction: column;
-  }
+    flex-direction: row;
 }
 
-@media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
-  }
-  .code {
-    background: #111;
-  }
-  .logo img {
-    filter: invert(1);
-  }
+.secondary_box {
+    width: 100%;
+    height: 100%;
+}
+
+.primary_box {
+    width: 17.75%;
+    height: 110%;
+    background: black;
+}
+
+.orange_box {
+    height: 60%;
+    width: 100%;
+    background: #FF7622;
+}
+
+.black_design {
+    z-index: 11;
+    position: absolute;
+    top: 750px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
+
+.black_design_long {
+    width: 100%;
+    height: 148px;
+    position: absolute;
+    top: 910px
+}
+
+.secondary_body_text {
+    height: min-content;
+    font-size: 238px;
+    z-index: 10;
+    position: absolute;
+    top: 800px;
+}
+
+@media (max-width: 700px) {
+    .navname {
+        font-size: 3rem;
+    }
+
+    .navcontents {
+        display: none;
+    }
 }
