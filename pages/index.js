@@ -12,6 +12,7 @@ export default function Home() {
                     name={"description"}
                     content={"Shantanu Mane's personal website"}
                 />
+                <link rel="icon" type="image/x-icon" href="nuclear.svg"/>
             </Head>
             <div className="container">
                 <div className={homeStyles.navbar}>
