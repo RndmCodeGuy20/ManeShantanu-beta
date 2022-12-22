@@ -33,6 +33,7 @@ export default function Home() {
                     <div className={homeStyles.projects_btn}>
                         <div className={homeStyles.projects_btn_name}>
                             {/*<a href="know-me.html">know me!</a>*/}
+                            know me!
                         </div>
                     </div>
                 </div>
