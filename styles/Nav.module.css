@@ -41,3 +41,13 @@
     transition: ease-in-out 0.2s;
     cursor: pointer;
 }
+
+@media (max-width: 500px) {
+    .navcontents {
+        display: none;
+    }
+
+    .navname {
+        font-size: 32px;
+    }
+}
