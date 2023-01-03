@@ -39,12 +39,22 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className={homeStyles.secondary_body_text} style={{textAlign: "center", display: 'flex'}}>
-                <el style={{color: "#FF7622",}}>WA</el>
-                NNABE ENGINEER
+            <div className={homeStyles.secondary_body_text} style={{display: 'flex'}}>
+                <span className={homeStyles.wannabe_text}>
+                    <span className={homeStyles.highlighted}>
+                        WA
+                    </span>
+                    NNABE
+                </span>
+                <span className={homeStyles.engineer_text}>
+                    <span style={{}}>
+                        E
+                    </span>
+                    NGINEER
+                </span>
             </div>
-            <div className={homeStyles.black_design}>
-                <img src="design.svg" alt=""/>
+            <div className={homeStyles.black_design} style={{background: 'url(./design.svg) repeat-x'}}>
+                {/*<img src="design.svg" alt=""/>*/}
             </div>
             <div className={homeStyles.black_design_long} style={{background: 'url(./design_long.svg) repeat-x'}}>
             </div>
